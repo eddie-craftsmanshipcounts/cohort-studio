@@ -1,4 +1,4 @@
-package com.craftsmanshipcounts.cohortstudio.usecases;
+package com.craftsmanshipcounts.cohortstudio.usecases.cohort;
 
 import java.util.List;
 

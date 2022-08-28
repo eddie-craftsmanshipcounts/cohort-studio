@@ -1,12 +1,12 @@
-package com.craftsmanshipcounts.cohortstudio.usecases;
+package com.craftsmanshipcounts.cohortstudio.usecases.cohort;
 
 import java.util.List;
 
 public class ViewCohortsResponse
 {
-	public final List<Cohort> cohorts;
+	public final List<CohortDTO> cohorts;
 
-	public ViewCohortsResponse(List<Cohort> cohorts)
+	public ViewCohortsResponse(List<CohortDTO> cohorts)
 	{
 		this.cohorts = cohorts;
 	}

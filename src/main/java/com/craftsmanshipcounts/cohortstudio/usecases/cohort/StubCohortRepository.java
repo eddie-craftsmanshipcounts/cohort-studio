@@ -1,16 +1,20 @@
-package com.craftsmanshipcounts.cohortstudio.usecases;
+package com.craftsmanshipcounts.cohortstudio.usecases.cohort;
 
 import java.util.List;
 
 public class StubCohortRepository implements CohortRepository
 {
-	public StubCohortRepository()
+
+	private List<Cohort> listOfCohorts;
+
+	public StubCohortRepository(List<Cohort> listOfCohorts)
 	{
+		this.listOfCohorts = listOfCohorts;
 	}
 
 	@Override
 	public List<Cohort> listCohorts()
 	{
-		return List.of();
+		return listOfCohorts;
 	}
 }

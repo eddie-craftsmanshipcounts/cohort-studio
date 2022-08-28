@@ -1,4 +1,4 @@
-package com.craftsmanshipcounts.cohortstudio.usecases;
+package com.craftsmanshipcounts.util;
 
 import com.craftsmanshipcounts.cohortstudio.usecases.cohort.Presenter;
 
