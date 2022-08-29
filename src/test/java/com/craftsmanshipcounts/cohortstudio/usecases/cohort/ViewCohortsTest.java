@@ -7,6 +7,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 
+import static com.craftsmanshipcounts.cohortstudio.usecases.cohort.StubCohortRepository.EMPTY_COHORT_REPOSITORY_STUB;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -17,7 +18,7 @@ public class ViewCohortsTest
 {
 	@Test
 	void shouldHaveNoCohorts_whenNoCohortsExist() throws Exception {
-		var testee = new ViewCohorts(new StubCohortRepository(List.of()));
+		var testee = new ViewCohorts(EMPTY_COHORT_REPOSITORY_STUB);
 		var request = new ViewCohortsRequest();
 		var presenter = new SpyPresenter<ViewCohortsResponse>();
 
